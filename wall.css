@@ -1,0 +1,39 @@
+.about-service{
+    height: auto;
+}
+
+.Main-heading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 3rem;
+    border-bottom: 0.1rem solid black;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 equal columns */
+  gap: 20px;                      /* space between columns */
+  align-items: center;             /* vertically center items */
+  padding: 20px;
+}
+
+.grid-item h2 {
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 786px){
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-section{
+        height: 30vh;
+    }
+}
